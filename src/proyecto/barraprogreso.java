@@ -83,8 +83,8 @@ public class barraprogreso {
 
 					if (i == 100) {
 
-						Hola hola = new Hola();
-						hola.frmHola.setVisible(true);
+						cine cine = new cine();
+						cine.frmLobby.setVisible(true);
 
 						frmBarraDeProgreso.setVisible(false);
 

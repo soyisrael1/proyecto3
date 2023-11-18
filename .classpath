@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="src/proyecto/commons-codec-1.16.0.jar"/>
 	<classpathentry kind="lib" path="src/proyecto/mysql-connector-j-8.1.0.jar"/>
+	<classpathentry kind="lib" path="src/cruds/itextpdf-5.5.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

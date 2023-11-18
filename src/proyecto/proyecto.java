@@ -55,8 +55,6 @@ public class proyecto {
 
 		frame.setBounds(100, 100, 997, 527);
 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 		frame.getContentPane().setLayout(null);
 
 		
