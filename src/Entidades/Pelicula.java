@@ -8,6 +8,9 @@ public class Pelicula {
 	String nombre;
 	String categoria;
 	String RangoEdad;
+	String rutaImagen;
+	
+	
 	DataPelicula da=new DataPelicula();
 	private int IdSala;
 
@@ -44,6 +47,14 @@ public class Pelicula {
 	public void setIdPeli(int idPeli) {
 		this.idPeli = idPeli;
 	}
+	
+	public String getRutaImagen() {
+        return rutaImagen;
+    }
+
+    public void setRutaImagen(String rutaImagen) {
+        this.rutaImagen = rutaImagen;
+    }
 
 	public String getNombre() {
 		return nombre;
