@@ -16,6 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 import Datas.DataSala;
 import Datas.DataTicket;
+import Entidades.Pelicula;
 import Entidades.Sala;
 import Entidades.Ticket;
 
@@ -27,6 +28,8 @@ public class crudVentaEliminar {
 	public ArrayList<Ticket> listaTickets = new ArrayList<Ticket>();
 	public DefaultTableModel model= new DefaultTableModel();
 	Ticket x;
+	ArrayList<Sala>listaSalas=null;
+	 ArrayList<Pelicula>listaPeliculas=null;
 	ArrayList<Ticket> lista;
 	int fila = 0;
 	int idTi = 0;
@@ -53,6 +56,27 @@ public class crudVentaEliminar {
 		   }
 		   tblVenta.setModel(model);
 		 }
+	 public String getPelicula(int idPeli) {
+		  String peli = "";
+		  for (Pelicula u: listaPeliculas) {
+		   if(u.getIdPeli()== idPeli){
+		    System.out.println("id user:"+u.getIdPeli());
+		    peli = u.getNombre();
+		   }
+		  }
+		  return peli;
+		  
+		 }	
+		 public String getSala(int idSala) {
+		  String sala = null;
+		  for (Sala u: listaSalas) {
+		   if(u.getIdSala()== idSala){
+		    sala = u.getNombre();
+		    
+		   }
+		  }
+		  return sala;
+		 }
 	
 	/**
 	 * Create the application.
@@ -61,6 +85,7 @@ public class crudVentaEliminar {
 		initialize();
 		actualizarTabla();
 	}
+	
 
 	/**
 	 * Initialize the contents of the frame.

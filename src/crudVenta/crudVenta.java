@@ -197,9 +197,8 @@ public class crudVenta {
 		cmbPelicula = new JComboBox();
 		cmbPelicula.setBounds(128, 109, 127, 21);
 		frmCrudVenta.getContentPane().add(cmbPelicula);
-		ButtonGroup grupo = new ButtonGroup();
-		grupo.add(radVip);
-		grupo.add(radNormal);
+		
+		
 
 		
 		 scrollPane = new JScrollPane();
@@ -337,6 +336,9 @@ public class crudVenta {
 		 lblCosto.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		 lblCosto.setBounds(70, 377, 148, 40);
 		 frmCrudVenta.getContentPane().add(lblCosto);
+		 ButtonGroup grupo = new ButtonGroup();
+			grupo.add(radVip);
+			grupo.add(radNormal);
 		
 	}
 	public void calcularCosto() {

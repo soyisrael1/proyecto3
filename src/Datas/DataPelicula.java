@@ -97,7 +97,7 @@ import Entidades.Pelicula;
 	                x.setNombre(rs.getString(2));
 	                x.setCategoria(rs.getString(3));
 	                x.setRangoEdad(rs.getString(4));
-	                x.setRutaImagen(rs.getString(5));
+	                
 	              
 
 	                ListaPelicula.add(x);
